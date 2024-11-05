@@ -14,7 +14,7 @@ const detectUrls = (text) => {
 };
 
 // Route to post a tweet
-app.post('/post-tweet', async (req, res) => {
+app.post('/tweet', async (req, res) => { // Changed endpoint to /tweet
     const { access_token } = req.headers; // OAuth 2.0 Bearer Token
     const { text } = req.body; // Tweet content
 
